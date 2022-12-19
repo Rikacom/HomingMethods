@@ -31,7 +31,10 @@ DESTDIR = $$_PRO_FILE_PWD_
 SOURCES += \
         main.cpp \
     Tasks/CreateTask.cpp \
-    Model/Target/Target.cpp
+    Model/Target/Target.cpp \
+    Tasks/Matrosova.cpp \
+    Model/Missile/mymissile.cpp \
+    Model/Target/mytarget.cpp
 
 HEADERS += \
     Tasks/CreateTask.h \
@@ -40,4 +43,8 @@ HEADERS += \
     Tasks/ADD_NEW_TASK/Target_List.hpp \
     Tasks/ADD_NEW_TASK/Task_Include.hpp \
     Tasks/ADD_NEW_TASK/Task_List.hpp \
-    Tasks/ADD_NEW_TASK/Task_New.hpp
+    Tasks/ADD_NEW_TASK/Task_New.hpp \
+    Tasks/Matrosova.h \
+    Model/Missile/exchange.h \
+    Model/Missile/mymissile.h \
+    Model/Target/mytarget.h

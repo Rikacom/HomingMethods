@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variant DateEndRun="23:09:39 19/12/22">
+    <task_name>Matrosova</task_name>
+    <parameter_values>
+        <object name="Матросова">
+            <parameter name="Шаг счета задачи, с" value="0.001"/>
+            <parameter name="Предельное время окончания реализации, с" value="100"/>
+            <parameter name="Шаг регистрации переменных, с" value="0.01"/>
+            <parameter name="Время начала регистрации, с" value="0"/>
+            <parameter name="Время окончания регистрации, с" value="100"/>
+            <parameter name="Номер начальной статистической реализации" value="1"/>
+            <parameter name="Количество статистических реализаций" value="1"/>
+            <parameter name="Номер регистрируемой статистической реализации" value="-1"/>
+            <parameter name="Границы динамического рисунка траектории" value=" "/>
+            <parameter name="Xmin, km" value="0"/>
+            <parameter name="Xmax, km" value="5"/>
+            <parameter name="Ymin, km" value="0"/>
+            <parameter name="Ymax, km" value="5"/>
+            <parameter name="Zmin, km" value="-0.3"/>
+            <parameter name="Zmax, km" value="0.3"/>
+            <parameter name="Признак записи результатов в файл" value="false"/>
+            <parameter name="Время предпускового моделирования, с" value="0"/>
+            <parameter name="Пауза перед счетом следующей реализации, с" value="0"/>
+            <parameter name="Рисование плоскости XY(true) или ZY(false) " value="true"/>
+        </object>
+        <object name="Моя цель">
+            <parameter name="Xo начальные кординаты, м" value="400"/>
+            <parameter name="Yo начальные кординаты, м" value="1500"/>
+            <parameter name="Vx начальная скорость, м/с" value="200"/>
+            <parameter name="Vy начальная скорость, м/с" value="0"/>
+        </object>
+        <object name="Моя ракета">
+            <parameter name="Xo начальные кординаты, м" value="1000"/>
+            <parameter name="Yo начальные кординаты, м" value="300"/>
+            <parameter name="|V| модуль скорости, м/с" value="223.60"/>
+            <parameter name="fi угол, град" value="63.43"/>
+        </object>
+    </parameter_values>
+    <graphic_parameters>
+        <object name="Матросова">
+            <parameter name="Матросова:bd_T::  Время, с" value="1"/>
+            <parameter name="Матросова:bi_RunNumber::  Номер реализации" value="1"/>
+        </object>
+        <object name="Моя цель">
+            <parameter name="Моя цель:x::  X координата, м" value="1"/>
+            <parameter name="Моя цель:y::  Y координата, м" value="1"/>
+            <parameter name="Моя цель:vx::  Скорость Vx, м/с" value="1"/>
+            <parameter name="Моя цель:vy::  Скорость Vy, м/с" value="1"/>
+        </object>
+        <object name="Моя ракета">
+            <parameter name="Моя ракета:x::  X координата, м" value="1"/>
+            <parameter name="Моя ракета:y::  Y координата, м" value="1"/>
+            <parameter name="Моя ракета:vx::  Скорость Vx, м/с" value="1"/>
+            <parameter name="Моя ракета:vy::  Скорость Vy, м/с" value="1"/>
+            <parameter name="Моя ракета:fi::  Угол fi, град" value="1"/>
+            <parameter name="Моя ракета:v_mod::  |V| модуль скорости, м/с" value="1"/>
+            <parameter name="Моя ракета:distance::  Дистанция / дальность, м" value="1"/>
+        </object>
+    </graphic_parameters>
+    <statistic_parameters>
+        <object name="Матросова">
+            <parameter name="Матросова:bd_T::  Время, с" value="0"/>
+            <parameter name="Матросова:bi_RunNumber::  Номер реализации" value="0"/>
+        </object>
+        <object name="Моя цель">
+            <parameter name="Моя цель:x::  X координата, м" value="0"/>
+            <parameter name="Моя цель:y::  Y координата, м" value="0"/>
+            <parameter name="Моя цель:vx::  Скорость Vx, м/с" value="0"/>
+            <parameter name="Моя цель:vy::  Скорость Vy, м/с" value="0"/>
+        </object>
+        <object name="Моя ракета">
+            <parameter name="Моя ракета:x::  X координата, м" value="0"/>
+            <parameter name="Моя ракета:y::  Y координата, м" value="0"/>
+            <parameter name="Моя ракета:vx::  Скорость Vx, м/с" value="0"/>
+            <parameter name="Моя ракета:vy::  Скорость Vy, м/с" value="0"/>
+            <parameter name="Моя ракета:fi::  Угол fi, град" value="0"/>
+            <parameter name="Моя ракета:v_mod::  |V| модуль скорости, м/с" value="0"/>
+            <parameter name="Моя ракета:distance::  Дистанция / дальность, м" value="0"/>
+        </object>
+    </statistic_parameters>
+    <comment></comment>
+    <realisation_results>
+        <graphics>
+            <page rows="2" columns="3">
+                <plot name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0">
+                    <X name="t" integer="0" lim="0" min="0" max="10" log="0"/>
+                    <Y name="x" integer="0" lim="0" min="0" max="10"/>
+                    <line Xpar="Матросова:bd_T::  Время, с" Ypar="Моя цель:x::  X координата, м1" color="4" style="0" width="2"/>
+                    <line Xpar="Матросова:bd_T::  Время, с" Ypar="Моя ракета:x::  X координата, м1" color="0" style="0" width="2"/>
+                </plot>
+                <plot name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0">
+                    <X name="t" integer="0" lim="0" min="0" max="10" log="0"/>
+                    <Y name="y" integer="0" lim="0" min="0" max="10"/>
+                    <line Xpar="Матросова:bd_T::  Время, с" Ypar="Моя цель:y::  Y координата, м1" color="4" style="0" width="2"/>
+                    <line Xpar="Матросова:bd_T::  Время, с" Ypar="Моя ракета:y::  Y координата, м1" color="0" style="0" width="2"/>
+                </plot>
+                <plot name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0">
+                    <X name="x" integer="0" lim="0" min="0" max="10" log="0"/>
+                    <Y name="y" integer="0" lim="0" min="0" max="10"/>
+                    <line Xpar="Моя цель:x::  X координата, м1" Ypar="Моя цель:y::  Y координата, м1" color="4" style="0" width="2"/>
+                    <line Xpar="Моя ракета:x::  X координата, м1" Ypar="Моя ракета:y::  Y координата, м1" color="0" style="0" width="2"/>
+                </plot>
+                <plot name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0">
+                    <X name="t" integer="0" lim="0" min="0" max="10" log="0"/>
+                    <Y name="distance" integer="0" lim="0" min="0" max="10"/>
+                    <line Xpar="Матросова:bd_T::  Время, с" Ypar="Моя ракета:distance::  Дистанция / дальность, м1" color="0" style="0" width="2"/>
+                </plot>
+            </page>
+        </graphics>
+        <tables>
+            <table name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" row_initial="1" count="1" step="1">
+                <column title="" parameter="0" format="1" precision="3"/>
+            </table>
+        </tables>
+        <files>
+            <file name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" row_initial="1" count="1" step="1">
+                <column title="" parameter="0"/>
+            </file>
+        </files>
+    </realisation_results>
+    <statistic_results>
+        <graphics>
+            <page rows="1" columns="1">
+                <plot name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0">
+                    <X name="" integer="0" lim="0" min="0" max="10" log="0"/>
+                    <Y name="" integer="0" lim="0" min="0" max="10"/>
+                    <line IsDistribution="0" X0="0" Dx="0" Nx="0" Xpar="" Ypar="" color="0" style="0" width="2"/>
+                </plot>
+            </page>
+        </graphics>
+        <tables>
+            <table name="" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" row_initial="1" count="1" step="1" type="0">
+                <column title="" parameter="0" format="1" precision="3"/>
+            </table>
+        </tables>
+    </statistic_results>
+    <miss_table SetRunCount="1" RealRunCount="1">
+        <object name="Np">
+            <parameter value="0" realization="1"/>
+        </object>
+        <object name="Nc">
+            <parameter value="0" realization="1"/>
+        </object>
+        <object name="tk,c">
+            <parameter value="0" realization="1"/>
+        </object>
+        <object name="hg,m">
+            <parameter value="0" realization="1"/>
+        </object>
+        <object name="hv,m">
+            <parameter value="0" realization="1"/>
+        </object>
+        <object name="hk,m">
+            <parameter value="0" realization="1"/>
+        </object>
+    </miss_table>
+    <statistic_data SetRunCount="1" RealRunCount="1" RegistList_size="0"/>
+</variant>

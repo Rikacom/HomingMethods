@@ -1,0 +1,4 @@
+**/*.user
+**/*.exe
+**/*.Release
+**/*.Debug

@@ -1,10 +1,7 @@
 #ifndef TargetH
 #define TargetH
 #include "Global.h"
-//#include "AirDynamics.h"
-//#include "BalDynamics.h"
-//#include "FTDynamics.h"
-//#include "FileDynamics.h"
+#include "MyTarget.h"
 #include "targetexchange.hpp"
 #include "Cp_types.h"
 /**

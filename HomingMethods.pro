@@ -33,8 +33,8 @@ SOURCES += \
     Tasks/CreateTask.cpp \
     Model/Target/Target.cpp \
     Tasks/Matrosova.cpp \
-    Model/Missile/mymissile.cpp \
-    Model/Target/mytarget.cpp
+    Model/Target/Mytarget.cpp \
+    Model/Missile/MyMissile.cpp
 
 HEADERS += \
     Tasks/CreateTask.h \
@@ -45,6 +45,5 @@ HEADERS += \
     Tasks/ADD_NEW_TASK/Task_List.hpp \
     Tasks/ADD_NEW_TASK/Task_New.hpp \
     Tasks/Matrosova.h \
-    Model/Missile/exchange.h \
-    Model/Missile/mymissile.h \
-    Model/Target/mytarget.h
+    Model/Target/MyTarget.h \
+    Model/Missile/MyMissile.h

@@ -9,18 +9,10 @@ CTarget::CTarget(int li_Level, std::wstring lc_String, CDialogObject *ParentPtr)
     bc_TypeName=bc_Name;
     int li_ObjectLevel = li_Level+1;
     switch (((CTaskBase*)ParentPtr)->gc_IndexList[bi_Number]) {
-//    case 0:
-//        vpc_TargetDynamics =
-//            new CAirDynamics(li_ObjectLevel, bi_Number, lc_String);
-//        break;
-//    case 1:
-//        vpc_TargetDynamics =
-//           new CBalDynamics(li_ObjectLevel, bi_Number, lc_String);
-//        break;
-//    case 2:
-//        vpc_TargetDynamics =
-//            new CFileDynamics(li_ObjectLevel, bi_Number, lc_String);
-//        break;
+    case 0:
+        vpc_TargetDynamics =
+            new CMyTarget(li_ObjectLevel, bi_Number, lc_String);
+        break;
     default:
         return;
     }

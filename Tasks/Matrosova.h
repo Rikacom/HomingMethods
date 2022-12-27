@@ -3,8 +3,9 @@
 #define MatrosovaH
 //---------------------------------------------------------------------------
 #include "Cp_types.h"
-#include "MyTarget.h"      //цель
-#include "MyMissile.h"     //ракета
+#include "Target.h"
+#include "MyMissile.h"     // Ракета
+
 //------------------Описание класса CMatrosova-------------------------------
 //Назначение: демонстрация работы АРГС в составе системы самонаведения
 //ракеты
@@ -16,17 +17,12 @@ public:
     CMatrosova(int li_Level, std::wstring lc_String);
    //Деструктор класса
     virtual ~CMatrosova();
-    void set_inputs(); //передача
+    void init_struct();
+    void set_inputs();   // Передача
+
 private:
-
-    CMyTarget* target; //цель
-
-    CMyMissile* missile; //ракета
-
-
 //------------------Данные класса--------------------------------------------
+    CMyMissile* missile; // Ракета
 };
 //---------------------------------------------------------------------------
 #endif
-
-

@@ -1,12 +1,15 @@
 #ifndef MYTARGET_H
 #define MYTARGET_H
-#include "Cp_types.h"
-#include "Exchange.h"
 
-class CMyTarget : public CDynamicObject
+#include "Cp_types.h"
+#include "ChuLib.h"
+
+using namespace ChuLib;
+
+class CMyTarget : public CDynamicsBase
 {
 public:
-    CMyTarget(int li_Level, std::wstring lc_String,CDialogObject* ParentPtr = 0, CTaskBase* BasePtr =0);
+    CMyTarget(int li_Level, int li_Number, std::wstring lc_String);
     virtual ~CMyTarget();
     void init_struct();
     void edit();
@@ -16,14 +19,12 @@ public:
     void calculate();
     void integrate();
     void finalize();
-    SMyTarget* getData();   //функция выдачи указателя на выходные данные цели
 
 private:
-    double x;
-    double y;
-    double vx;
-    double vy;
-    SMyTarget source_Target;  //структура выходных данных цели
+    Vector vc_Xg;  // вектор координат (X координата, Y координата, Z координата)
+    Vector vc_Vg;  // вектор скоростей (Vx скорость,  Vy скорость,  Vz скорость)
+    Matrix vc_Atg; // матрица переходов из земной системы в систему координат цели
+    Vector vc_Ntg; // вектор ускорений
 };
 
 #endif // MYTARGET_H

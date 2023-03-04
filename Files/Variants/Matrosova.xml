@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<variant DateEndRun="22:36:14 27/12/22">
+<variant DateEndRun="22:58:45 04/03/23">
     <task_name>Матросова</task_name>
     <target_types>
         <type>0</type>
@@ -25,6 +25,7 @@
             <parameter name="Время предпускового моделирования, с" value="0"/>
             <parameter name="Пауза перед счетом следующей реализации, с" value="0"/>
             <parameter name="Рисование плоскости XY(true) или ZY(false) " value="true"/>
+            <parameter name="Период отрисовки динамических траекторий, мс" value="25"/>
         </object>
         <object name="Моя ракета">
             <parameter name="Номер метода наведения&#10; 1 - Наведение в мгновенную точку встречи - параллельное сближение&#10; 2 - Метод погони&#10; 3 - Метод пропорционального сближения" value="3"/>
@@ -252,7 +253,7 @@
     </statistic_results>
     <miss_table SetRunCount="1" RealRunCount="1">
         <object name="Np">
-            <parameter value="-1" realization="1"/>
+            <parameter value="0" realization="1"/>
         </object>
         <object name="Nc">
             <parameter value="0" realization="1"/>
